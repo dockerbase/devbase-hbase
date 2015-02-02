@@ -1,7 +1,7 @@
-## Docker Base: Devbase-scala
+## Docker Base: Devbase-hbase
 
 
-This repository contains **Dockerbase** of [Devbase-scala](http://www.scala-lang.org/) for [Docker](https://www.docker.com/)'s [Dockerbase build](https://registry.hub.docker.com/u/dockerbase/devbase-scala/) published on the public [Docker Hub Registry](https://registry.hub.docker.com/).
+This repository contains **Dockerbase** of [Devbase-hbase](http://hbase.apache.org/) for [Docker](https://www.docker.com/)'s [Dockerbase build](https://registry.hub.docker.com/u/dockerbase/devbase-hbase/) published on the public [Docker Hub Registry](https://registry.hub.docker.com/).
 
 
 ### Depends on:
@@ -13,12 +13,12 @@ This repository contains **Dockerbase** of [Devbase-scala](http://www.scala-lang
 
 1. Install [Docker](https://docs.docker.com/installation/).
 
-2. Download [Dockerbase build](https://registry.hub.docker.com/u/dockerbase/devbase-scala/) from public [Docker Hub Registry](https://registry.hub.docker.com/): `docker pull dockerbase/devbase-scala`
+2. Download [Dockerbase build](https://registry.hub.docker.com/u/dockerbase/devbase-hbase/) from public [Docker Hub Registry](https://registry.hub.docker.com/): `docker pull dockerbase/devbase-hbase`
 
 
 ### Usage
 
-    docker run -it --rm --name dockerbase-devbase-scala dockerbase/devbase-scala
+    docker run -it --rm --name dockerbase-devbase-hbase dockerbase/devbase-hbase
 
 ### Components & Versions
 
