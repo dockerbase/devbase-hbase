@@ -22,10 +22,11 @@ ls_volume:
 		ls -ls $$DIR
 
 version:
-	docker run -it --rm $(NAME):$(VERSION) sh -c " lsb_release -d ; git --version ; ruby -v ; ssh -V ; make -v " | tee COMPONENTS
+	docker run -it --rm $(NAME):$(VERSION) sh -c " lsb_release -d ; git --version ; ssh -V ; make -v " | tee COMPONENTS
 	docker run -it --rm $(NAME):$(VERSION) sh -c " javac -version ; java -version " | tee -a COMPONENTS
 	# TODO: try to list hbase version here
 	#docker run -it --rm $(NAME):$(VERSION) sh -c " hbase -version " | tee -a COMPONENTS
+	echo "hbase version: 0.98.9-hadoop2" | tee -a COMPONENTS
 	dos2unix COMPONENTS
 	sed -i -e 's/^/    /' COMPONENTS
 	sed -i -e '/^### Components & Versions/q' README.md
